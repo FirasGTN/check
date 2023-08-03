@@ -76,14 +76,16 @@ a {
 
 #s1-p1 {
   padding-right: 25px;
-  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 #s1-p2 {
   padding-left: 25px;
-  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 @-webkit-keyframes tracking-in-expand {
@@ -111,7 +113,6 @@ a {
   }
 }
 
-
 .s2 {
   display: flex;
   justify-content: space-around;
@@ -132,7 +133,7 @@ a {
   justify-content: space-between;
 }
 
-.fa1  {
+.fa1 {
   -webkit-animation: focus-in-expand 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: focus-in-expand 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -456,6 +457,8 @@ a {
 }
 
 .card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.39) 0px 0px 20px;
 }
 
